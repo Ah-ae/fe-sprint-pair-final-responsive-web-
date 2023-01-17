@@ -1,0 +1,62 @@
+.container {
+    grid-row: span 1;
+    grid-column: span 3;
+}
+
+.mainContainer {
+    grid-row: span 2;
+    grid-column: span 6;
+}
+
+/* 태블릿 분기 */
+@media screen and (max-width: 1024px) {
+    .container  {
+        grid-column: span 6;
+    }
+    .mainContainer {
+        grid-row: span 2;
+        grid-column: span 12;
+    }
+}
+
+/* 모바일 분기 */
+@media screen and (max-width: 720px) {
+    .container  {
+        grid-row: span 1;
+        grid-column: span 12;
+    }
+    .mainContainer {
+        grid-row: span 2;
+        grid-column: span 12;
+    }
+}
+
+.cardWrapper {
+    /* background-color: mediumaquamarine; */
+}
+
+.media {
+    /* 카드 이미지  */
+}
+
+.media img {
+    width: 100%;
+    border-radius: 0.8rem;
+}
+
+.viewOriginal {
+    opacity: 0;
+}
+.viewOriginalText{
+
+}
+
+.content {
+
+}
+.readTime {
+    margin-left: 0.5rem;
+}
+.footer {
+    margin-top: 0.5rem;
+}
